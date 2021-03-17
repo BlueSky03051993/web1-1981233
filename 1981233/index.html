@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>1981233 - Ice-cream</title>
+  <title>1981233 - Ice-cream </title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,46 +10,63 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/1981233.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One" type="text/css">
+  <link rel="stylesheet" href="css/banner.css">
+  
 </head>
 
 <body>
   <header class="container">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light px-0">
-      <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-sm navbar-light px-0">
+      <a class="navbar-brand" href="index.html" id="logo">
         <img src="images/logo.png" alt="">
       </a>
-      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#menu"
+        aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="menu.html">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
+            <a class="nav-link" href="contact.html">Contacts</a>
           </li>
 
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <form class="form-inline my-2 my-lg-0" id="frm-search">
+          <div class="input-group input-group-sm">
+            <input class="form-control" type="text" placeholder="Search" id="searchword">
+            <div class="input-group-append">
+              <button class="btn" type="submit" id="btn-search"></button>
+            </div>
+          </div>
         </form>
-        <a href="#"> <img src="images/twitter.png" alt=""></a>
-        <a href="#"> <img src="images/facebook.png" alt=""></a>
+        <div id="social">
+          <a href="#" class="btn twitter"></a>
+          <a href="#" class="btn facebook"></a>
+        </div>
       </div>
     </nav>
   </header>
+
+  <div id="content">
+
+  
+  <!--banner-->
+
   <div class="container-fluid" id="banner">
     <div class="container text-center">
       <h4 class="text-white">Tasty cakes and ice-cream <br /> for everyone</h4>
@@ -61,38 +78,6 @@
       </ul>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <img src="images/icon-1.png" alt="">
-      <h4></h4>
-      <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
-      <a href="#">Read more</a>
-    </div>
-    <div class="col">
-      <img src="images/icon-2.png" alt="">
-      <h4></h4>
-      <div>Possimus laboriosam omnis dignissimos repudiandae dolor vitae illo.</div>
-      <a href="#">Read more</a>
-    </div>
-    <div class="col">
-      <img src="images/icon-3.png" alt="">
-      <h4></h4>
-      <div>Facilis incidunt repudiandae aliquam reiciendis facere dolorem praesentium.</div>
-      <a href="#">Read more</a>
-    </div>
-    <div class="col">
-      <img src="images/icon-4.png" alt="">
-      <h4></h4>
-      <div>Ad consectetur, et nostrum aspernatur blanditiis ut laboriosam?</div>
-      <a href="#">Read more</a>
-    </div>
-
-  </div>
-  
-  
-  </div>
-  
-  
   <!--/banner-->
   <!--main-->
   <div class="container">
@@ -138,9 +123,8 @@
     </div>
   </div>
   <!--/news-->
-<!--/news-->
 </div>
-<!--12323313-->
+  <!--footer-->
   <footer class="container-fluid">
     <nav>
       <ul>
@@ -153,18 +137,63 @@
     </nav>
     <div>Ice-cream &copy; 2020 | <a href="#" class="text-uppercase">Privacy policy</a></div>
   </footer>
-
+  <!--/footer-->
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="js/handlebars-v4.7.6.js"></script>
+  <script id="products-template" type="text/x-handlebars-template">
+    {{#each data}}
+    <div class="col text-center">
+      <img src="{{thumbpath}}" alt="">
+      <h4>{{name}}</h4>
+      <div class="pb-2">{{summary}}</div>
+      <a class="readmore" href="#" onclick="loadData('products/{{id}}','#content', '#details-template');">Read more</a>
+    </div>
+    {{/each}}
+  </script>
+  <script id="news-template" type="text/x-handlebars-template">
+    {{#each data}}
+    <div class="col">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="date">25.<br />{{date}}</div>
+          <a class="readmore" href="#" onclick="loadData('news/{{id}}','#content', '#details-template');">Read more</a>
+        </div>
+        <div class="col-sm-8">
+          <h4>{{name}}</h4>
+          <div>{{summary}}</div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+  <script id="details-template" type="text/x-handlebars-template">
+   <div class="container-fluid" id="small-banner">
+   </div>
+   <!--details-->
+   {{#each data}}
+   <div class="container py-5">
+      <h3 class="text-dark">{{name}}</h3>
+      <div>{{{description}}}</div>
+   </div>
+   {{/each}}
+   <!--/details-->
+  </script>
+  <script src="js/1981233.js"></script>
+  <script>
+    $(document).ready(function(){
+      loadData('products','#products', '#products-template');
+      loadData('news','#news', '#news-template');  
+    });
+  </script>
 </body>
 
 </html>
